@@ -1,41 +1,25 @@
-import images from './assets/img/images.jpg';
+import React from 'react';
 import './App.css';
+import Header from './Header';
+import Formulario from './Formulario';
+import Footer from './Footer';
+//importamos lo necesario para que funcione.
 
 function App() {
+  const handleFormSubmit = () => {
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-      <img src={images} alt="Diagnóstico automotriz" style={{ width: '300px', height: 'auto' }} />
-        <h1>Diagnóstico automotriz</h1> {/* Encabezado */}
-        <form>
-          {/* formulario */}
-          <label htmlFor="firstName">Nombre:</label>
-          <input type="text" id="firstName" name="firstName" /><br/>
-
-          <label htmlFor="lastName">Apellido:</label>
-          <input type="text" id="lastName" name="lastName" /><br/>
-
-          <label htmlFor="vehicleType">Tipo de vehículo:</label>
-          <select id="vehicleType" name="vehicleType">
-            <option value="carroS">Sedan</option>
-            <option value="carroC">Compacto</option>
-            <option value="Camioneta">Camioneta</option>
-            <option value="PickUp">PickUp</option>
-            {}
-          </select><br/>
-
-          <label htmlFor="licensePlate">Placa:</label>
-          <input type="text" id="licensePlate" name="licensePlate" /><br/>
-
-          {/* Botón */}
-          <button type="submit">Enviar</button>
-          
-        </form>
-        
-      
-      </header>
+      <Header />
+      <Formulario onSubmit={handleFormSubmit} />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
