@@ -1,0 +1,31 @@
+.carousel-container {
+  max-width: 130%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+/* Altura del carousel */
+.slick-slide img {
+  height: 400px; /* Ajusta la altura de los slides a 300px */
+  width: 420px;
+}
+
+/* Estilos para los puntos carousel */
+.slick-dots {
+  bottom: 20px;
+}
+
+/* Estilos para los puntos individuales del carousel */
+.slick-dots li button:before {
+  font-size: 20px;
+}
+
+/*  título del carousel */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}

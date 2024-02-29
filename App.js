@@ -1,25 +1,31 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Header';
-import Formulario from './Formulario';
+import Carousel from './Carousel';
 import Footer from './Footer';
-//importamos lo necesario para que funcione.
+import Registro from './Registro';
+import Iniciarsesion from './Iniciarsesion';
+import Agendarcita from './Agendarcita';
+import Maps from './Maps';
+
 
 function App() {
-  const handleFormSubmit = () => {
-    setTimeout(() => {
-      window.location.reload();
-    }, 2000);
-  };
-
   return (
-    <div className="App">
-      <Header />
-      <Formulario onSubmit={handleFormSubmit} />
-      <Footer />
-    </div>
+    <Router>
+      <div style={{ marginBottom: '50px' }}>
+        <Header />
+        <Carousel />
+        <Maps />
+        <Routes>
+          <Route path="/registro" element={<Registro />} />
+          <Route path="/iniciar-sesion" element={<Iniciarsesion />} />
+          <Route path="/Agendarcita" element={<Agendarcita />} />
+
+        </Routes>
+      </div>
+       <Footer />
+    </Router>
   );
 }
 
 export default App;
-
