@@ -4,9 +4,9 @@ import React from 'react';
 function IniciarSesion() {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Lógica para manejar el inicio de sesión
+    
     window.location.reload(); // Recargar la página
-    window.location.href = '/Agendarcita'; // Redirigir a la nueva página
+    window.location.href = '/Agendarcita'; // Redirigir a la página que necesito 
   };
 
   return (
