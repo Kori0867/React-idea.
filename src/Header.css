@@ -1,0 +1,27 @@
+.header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Mostrar en línea */
+    justify-content: space-between; /* Alinear los elementos a los extremos */
+    align-items: center; /* Alinear verticalmente al centro */
+  }
+  
+  .header-title {
+    margin: 0; /* Eliminar margen superior e inferior */
+  }
+  
+  .header-buttons {
+    display: flex; /* Mostrar en línea */
+  }
+  
+  .button {
+    margin-left: 10px; /* Margen izquierdo entre botones */
+    padding: 8px 12px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #376bd1; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+  }
+  

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './Header';
+import Carousel from './Carousel';
+import Footer from './Footer';
+import Registro from './Registro';
+import Iniciarsesion from './Iniciarsesion';
+import Agendarcita from './Agendarcita';
+import Maps from './Maps';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div style={{ marginBottom: '50px' }}>
+        <Header />
+        <Carousel />
+        <Maps />
+        <Routes>
+          <Route path="/registro" element={<Registro />} />
+          <Route path="/iniciar-sesion" element={<Iniciarsesion />} />
+          <Route path="/Agendarcita" element={<Agendarcita />} />
+
+        </Routes>
+      </div>
+       <Footer />
+    </Router>
   );
 }
 
