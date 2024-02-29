@@ -1,14 +1,14 @@
 .header {
     background-color: #333; /* Color de fondo del encabezado */
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    display: flex; /* Mostrar en línea */
-    justify-content: space-between; /* Alinear los elementos a los extremos */
-    align-items: center; /* Alinear verticalmente al centro */
+    color: white; /* Color texto */
+    padding: 10px 20px; /* Espaciado de adentro */
+    display: flex; /* Mostrar en la línea */
+    justify-content: space-between; /* Alinea a las esquinas */
+    align-items: center; /* Alinear verticalmente del centro */
   }
   
   .header-title {
-    margin: 0; /* Eliminar margen superior e inferior */
+    margin: 0; /* Elimina el margen superior e inferior */
   }
   
   .header-buttons {
@@ -16,11 +16,11 @@
   }
   
   .button {
-    margin-left: 10px; /* Margen izquierdo entre botones */
+    margin-left: 10px; /* Margen izquierdo de botones */
     padding: 8px 12px; /* Espaciado interno */
-    border: none; /* Sin borde */
+    border: none; /* bordes */
     border-radius: 5px; /* Borde redondeado */
-    background-color: #376bd1; /* Color de fondo del botón */
+    background-color: #376bd1; /* color del botón */
     color: white; /* Color del texto */
     cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
   }
