@@ -4,9 +4,9 @@ import React from 'react';
 function Agendarcita() {
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Lógica para manejar el envío del formulario de agendar cita
+    // envío del formulario de agendar cita
 
-    // Muestra un mensaje de confirmación al usuario
+    //  mensaje de confirmación para el usuario
     window.alert('Se ha registrado su cita.');
 
     // Recarga la página
