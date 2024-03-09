@@ -23,6 +23,9 @@ function Registro() {
 
     // Indica que el registro fue exitoso
     setRegistroExitoso(true);
+
+     window.location.reload(); // Recargar la página
+    window.location.href = '/Iniciar-sesion'; // Redirigir a la nueva página
   };
 
   return (
