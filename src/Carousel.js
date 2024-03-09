@@ -49,6 +49,9 @@ function Carousel() {
         </div>
         
       </Slider>
+           <div> Ubicacion: Calle tulipanes # 1313 
+        colonia campesina. 
+      </div>
     </div>
   );
 }
